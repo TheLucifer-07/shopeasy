@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEasy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">ShopEasy</h1>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#home" class="text-gray-700 hover:text-blue-500">Home</a>
+        <a href="#shop" class="text-gray-700 hover:text-blue-500">Shop</a>
+        <a href="#about" class="text-gray-700 hover:text-blue-500">About</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-500">Contact</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <button class="text-gray-700 hover:text-blue-500">🛒</button>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Login</button>
+        <button id="menu-btn" class="md:hidden text-gray-700 text-2xl">&#9776;</button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+      <a href="#home" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+      <a href="#shop" class="block px-4 py-2 hover:bg-gray-100">Shop</a>
+      <a href="#about" class="block px-4 py-2 hover:bg-gray-100">About</a>
+      <a href="#contact" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+    </div>
+  </header>
+<section id="home" class="h-screen bg-gray-50 flex items-center">
+  <div class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center">
+    <div class="w-full md:w-1/2 space-y-6 text-center md:text-left">
+      <h2 class="text-5xl md:text-6xl font-bold text-gray-800 leading-tight">
+        Discover the <span class="text-blue-600">Best Deals</span><br> on Your Favorite Products
+      </h2>
+      <p class="text-gray-600 text-lg md:w-3/4 mx-auto md:mx-0">
+        Shop top-quality items with unbeatable prices — delivered right to your doorstep.
+      </p>
+      <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition text-lg">
+        🛍️ Shop Now
+      </button>
+    </div>
+    <div class="w-full md:w-1/2 mb-10 md:mb-0 flex justify-center">
+      <img src="assets/hero.JPG" alt="Shopping" class="rounded-lg shadow-lg w-96 h-96 object-cover">
+    </div>
+  </div>
+</section>
+<section id="shop" class="bg-gray-100 py-16">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">🛍️ Our Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/product1.JPG" alt="Product 1"  class="w-full h-64 object-contain rounded-md mb-3 bg-gray-50">
+        <h3 class="text-lg font-semibold">Casual T-Shirt</h3>
+        <p class="text-gray-600 mb-2">$20.00</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Add to Cart</button>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/product2.JPG" alt="Product 2"  class="w-full h-64 object-contain rounded-md mb-3 bg-gray-50">
+        <h3 class="text-lg font-semibold">Jeans</h3>
+        <p class="text-gray-600 mb-2">$40.00</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Add to Cart</button>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/product3.JPG" alt="Product 3"  class="w-full h-64 object-contain rounded-md mb-3 bg-gray-50">
+        <h3 class="text-lg font-semibold">Sneakers</h3>
+        <p class="text-gray-600 mb-2">$55.00</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Add to Cart</button>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/product4.JPG" alt="Product 4"  class="w-full h-64 object-contain rounded-md mb-3 bg-gray-50">
+        <h3 class="text-lg font-semibold">Cap</h3>
+        <p class="text-gray-600 mb-2">$15.00</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" class="py-16 bg-white">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+    <div class="w-full md:w-1/2 flex justify-center">
+      <img src="assets/about.JPG" alt="About Us" 
+           class="w-96 h-96 object-contain rounded-lg shadow-lg bg-gray-50">
+    </div>
+    <div class="w-full md:w-1/2">
+      <h2 class="text-4xl font-bold text-gray-800 mb-6">About <span class="text-blue-600">Us</span></h2>
+      <p class="text-gray-600 text-lg leading-relaxed mb-4">
+        Welcome to <span class="font-semibold">ShopEase</span> — your one-stop destination for
+        trendy fashion, quality products, and unbeatable prices. We believe in delivering
+        not just items, but a joyful shopping experience.
+      </p>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        Our mission is to bring you hand-picked products that combine comfort, style,
+        and affordability. Thank you for choosing us!
+      </p>
+    </div>
+
+  </div>
+</section>
+<section id="contact" class="bg-gray-100 py-16">
+  <div class="container mx-auto px-6">  
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Contact <span class="text-blue-600">Us</span></h2>  
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+      <form action="#" method="POST" class="space-y-6">
+        <div>
+          <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+          <input type="text" id="name" name="name" 
+                 class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                 placeholder="Enter your name" required>
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+          <input type="email" id="email" name="email" 
+                 class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                 placeholder="Enter your email" required>
+        </div>
+        <div>
+          <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+          <textarea id="message" name="message" rows="4"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                    placeholder="Write your message here..." required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" 
+                  class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+            Send Message
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
